@@ -8,7 +8,16 @@ export default {
     "./app.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'brand-light': '#FDF6EC',
+        'brand-green': '#306564'
+      },
+      fontFamily: {
+        'sora': ['Sora', 'sans-serif'],
+        'hornbill': ['Hornbill']
+      }
+    },
   },
   plugins: [],
 }
