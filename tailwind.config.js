@@ -10,14 +10,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'brand-light': '#FDF6EC',
-        'brand-green': '#306564'
+        "brand-light": "#FDF6EC",
+        "brand-green": "#306564",
       },
       fontFamily: {
-        'sora': ['Sora', 'sans-serif'],
-        'hornbill': ['Hornbill']
-      }
+        sora: ["Sora", "sans-serif"],
+        hornbill: ["Hornbill"],
+      },
     },
   },
   plugins: [],
-}
+};
