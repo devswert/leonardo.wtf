@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/src/assets/main.css"],
-  components: [{ path: "~/components/icons" }, "~/components"],
+  components: ["~/components/icons", "~/components/sections", "~/components"],
   postcss: {
     plugins: {
       tailwindcss: {},

@@ -2,7 +2,6 @@
   <div>
     <svg
       id="svg-container"
-      class="-top-20 -right-32 z-0 max-w-lg opacity-40 absolute"
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
