@@ -12,6 +12,7 @@ export default {
       colors: {
         "brand-light": "#FDF6EC",
         "brand-green": "#306564",
+        "brand-green-light": "#ABBCB6",
       },
       fontFamily: {
         sora: ["Sora", "sans-serif"],
