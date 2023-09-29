@@ -5,6 +5,9 @@
 
     <!-- About Me Section -->
     <AboutMeSection></AboutMeSection>
+
+    <!-- Professional Experience -->
+    <ProfessionalExperienceSection></ProfessionalExperienceSection>
   </div>
 </template>
 

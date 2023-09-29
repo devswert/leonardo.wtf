@@ -32,6 +32,7 @@
       <LaravelIcon :size="50" />
       <NestjsIcon :size="50" />
       <FlutterIcon :size="50" />
+      <CSSIcon :size="50" />
       <TailwindIcon :size="50" />
       <DjangoIcon :size="50" />
       <MongoDBIcon :size="50" />
@@ -43,6 +44,7 @@
       <MySQLIcon :size="50" />
       <KafkaIcon :size="50" />
       <DockerIcon :size="50" />
+      <LinuxIcon :size="50" />
       <FigmaIcon :size="50" />
       <KubernetesIcon :size="50" />
       <AWSIcon :size="50" />
