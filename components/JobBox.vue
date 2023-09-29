@@ -1,13 +1,15 @@
 <template>
   <div
-    class="cursor-pointer my-12 transition-all duration-300 text-brand-green"
+    class="my-12 transition-all duration-300 text-brand-green"
     :class="{
+      'cursor-pointer': !descriptionAlwaysVisible,
       'bg-brand-green text-brand-light rounded px-3 py-6': $props.isActive,
     }"
   >
     <div class="flex flex-row items-center justify-between">
       <h3 class="font-sora font-extrabold text-2xl">{{ props.company }}</h3>
       <ArrowIcon
+        v-if="!descriptionAlwaysVisible"
         :size="24"
         :color="arrowColor"
         :class="{

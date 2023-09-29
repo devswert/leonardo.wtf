@@ -7,7 +7,7 @@
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <defs>
-        <clipPath id="image-shape">
+        <clipPath :id="imageShapeId">
           <path :id="blobPathId" :d="pathState" fill="#306564"></path>
         </clipPath>
       </defs>
@@ -19,7 +19,7 @@
           'opacity-0': !isFirstContainerVisible,
         }"
         width="100%"
-        clip-path="url(#image-shape)"
+        :clip-path="`url(#${imageShapeId})`"
         :href="imageContainer1"
       ></image>
       <image
@@ -30,7 +30,7 @@
           'opacity-0': !isSecondContainerVisible,
         }"
         width="100%"
-        clip-path="url(#image-shape)"
+        :clip-path="`url(#${imageShapeId})`"
         :href="imageContainer2"
       ></image>
     </svg>
@@ -79,6 +79,10 @@ const isFirstContainerVisible = computed(() => {
 
 const isSecondContainerVisible = computed(() => {
   return currentContainer.value === "C2";
+});
+
+const imageShapeId = computed(() => {
+  return `image-shape-${blobPathId.value}`;
 });
 
 // onMounted component event
@@ -153,9 +157,7 @@ function updateNextImage() {
 }
 
 function getRandomNumber() {
-  const numbers = Array(9)
-    .fill("")
-    .map((_, index) => index + 1);
+  const numbers = "123456789".split("");
   let currentIndex = numbers.length;
   let randomIndex;
 

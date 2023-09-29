@@ -1,19 +1,27 @@
 <template>
   <div>
     <!-- Presentation -->
-    <HeaderSection></HeaderSection>
+    <HeaderSection class="container max-w-7xl mx-auto"></HeaderSection>
 
     <!-- About Me -->
-    <AboutMeSection></AboutMeSection>
+    <div class="bg-brand-green">
+      <AboutMeSection class="container max-w-7xl mx-auto"></AboutMeSection>
+    </div>
 
     <!-- Professional Experience -->
-    <ProfessionalExperienceSection></ProfessionalExperienceSection>
+    <ProfessionalExperienceSection
+      class="container max-w-7xl mx-auto"
+    ></ProfessionalExperienceSection>
 
     <!-- Education -->
-    <EducationSection></EducationSection>
+    <div class="bg-brand-green">
+      <EducationSection class="container max-w-7xl mx-auto"></EducationSection>
+    </div>
 
     <!-- No Tech Things -->
-    <NoTechThingsSection></NoTechThingsSection>
+    <NoTechThingsSection
+      class="container max-w-7xl mx-auto"
+    ></NoTechThingsSection>
   </div>
 </template>
 
