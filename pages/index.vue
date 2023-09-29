@@ -1,13 +1,18 @@
 <template>
   <div>
-    <!-- Header Section -->
+    <!-- Presentation -->
     <HeaderSection></HeaderSection>
 
-    <!-- About Me Section -->
+    <!-- About Me -->
     <AboutMeSection></AboutMeSection>
 
     <!-- Professional Experience -->
     <ProfessionalExperienceSection></ProfessionalExperienceSection>
+
+    <!-- Education -->
+    <EducationSection></EducationSection>
+
+    <!-- No Tech Things -->
   </div>
 </template>
 
