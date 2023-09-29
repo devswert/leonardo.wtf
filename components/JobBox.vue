@@ -29,7 +29,7 @@
     <div v-if="props.icons.length > 0" class="flex flex-wrap gap-4 mt-3">
       <BrandIcon
         v-for="icon in props.icons"
-        v-bind:key="icon"
+        :key="icon"
         :icon="icon"
         :size="30"
       />

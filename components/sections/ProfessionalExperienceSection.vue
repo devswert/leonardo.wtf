@@ -7,12 +7,12 @@
 
     <JobBox
       v-for="job in jobs"
-      v-bind:key="job.company"
+      :key="job.company"
       :company="job.company"
       :position="job.position"
-      :timeFrame="job.timeFrame"
+      :time-frame="job.timeFrame"
       :description="job.description"
-      :isActive="job.isActive"
+      :is-active="job.isActive"
       :icons="job.tools"
       @click="job.isActive = !job.isActive"
     />
@@ -24,9 +24,9 @@
 
     <JobBox
       v-for="sideprojet in sideprojets"
-      v-bind:key="sideprojet.company"
+      :key="sideprojet.company"
       :company="sideprojet.company"
-      :descriptionAlwaysVisible="true"
+      :description-always-visible="true"
       :position="sideprojet.date"
       :description="sideprojet.description"
       :icons="sideprojet.tools"

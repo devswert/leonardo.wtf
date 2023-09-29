@@ -45,7 +45,7 @@ import * as dynamics from "dynamics.js";
 // Local variables and state
 let initialized = false;
 let currentPosition = 1;
-let blobShapeConfig = {
+const blobShapeConfig = {
   size: 500,
   edges: 15,
   seed: 1,
@@ -96,7 +96,7 @@ function setup() {
   blobShapeConfig.size = props.size;
   blobShapeConfig.seed = getRandomNumber();
   pathState.value = blobshape(blobShapeConfig).path;
-  if (props.images.length == 0) {
+  if (props.images.length === 0) {
     return;
   }
 
@@ -156,8 +156,8 @@ function getRandomNumber() {
   const numbers = Array(9)
     .fill("")
     .map((_, index) => index + 1);
-  let currentIndex = numbers.length,
-    randomIndex;
+  let currentIndex = numbers.length;
+  let randomIndex;
 
   // While there remain elements to shuffle.
   while (currentIndex > 0) {
