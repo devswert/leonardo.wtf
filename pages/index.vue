@@ -1,7 +1,9 @@
 <template>
   <div>
     <!-- Presentation -->
-    <HeaderSection class="container max-w-7xl mx-auto"></HeaderSection>
+    <PresentationSection
+      class="container max-w-7xl mx-auto"
+    ></PresentationSection>
 
     <!-- About Me -->
     <div class="bg-brand-green">
