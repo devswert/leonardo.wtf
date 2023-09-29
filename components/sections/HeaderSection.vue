@@ -26,19 +26,19 @@
       </a>
       <div class="flex flex-row gap-4 mx-auto my-4">
         <a
-          href=""
+          href="email:leo.david.mm@gmail.com"
           class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
         >
           <EmailIcon :size="20"></EmailIcon>
         </a>
         <a
-          href=""
+          href="https://linkedin.com/in/leonardodavid"
           class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
         >
           <LinkedInIcon :size="20"></LinkedInIcon>
         </a>
         <a
-          href=""
+          href="https://github.com/devswert"
           class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
         >
           <GitHubIcon :size="20"></GitHubIcon>

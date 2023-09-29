@@ -8,7 +8,7 @@
     >
       <defs>
         <clipPath id="image-shape">
-          <path id="blob-path" :d="pathState" fill="#306564"></path>
+          <path :id="blobPathId" :d="pathState" fill="#306564"></path>
         </clipPath>
       </defs>
       <image
@@ -45,10 +45,12 @@ import * as dynamics from "dynamics.js";
 // Local variables and state
 let initialized = false;
 let currentPosition = 1;
-const blobShapeConfig = {
+let blobShapeConfig = {
   size: 500,
   edges: 15,
+  seed: 1,
 };
+const blobPathId = ref("blob-path-");
 const currentContainer = ref("C1");
 const imageContainer1 = ref("");
 const imageContainer2 = ref("");
@@ -59,6 +61,10 @@ const props = defineProps({
   images: {
     type: Array<string>,
     required: true,
+  },
+  size: {
+    type: Number,
+    default: 500,
   },
 });
 
@@ -86,6 +92,9 @@ function setup() {
     return;
   }
 
+  blobPathId.value = `blob-path-${getRandomNumber()}`;
+  blobShapeConfig.size = props.size;
+  blobShapeConfig.seed = getRandomNumber();
   pathState.value = blobshape(blobShapeConfig).path;
   if (props.images.length == 0) {
     return;
@@ -110,7 +119,9 @@ function setup() {
 }
 
 function changeShape() {
-  const blobPath = document.getElementById("blob-path");
+  const blobPath = document.getElementById(blobPathId.value);
+  blobShapeConfig.size = props.size;
+  blobShapeConfig.seed = getRandomNumber();
   const newShape = blobshape(blobShapeConfig);
   dynamics.animate(
     blobPath,
@@ -139,5 +150,28 @@ function updateNextImage() {
   } else {
     imageContainer1.value = props.images[currentPosition];
   }
+}
+
+function getRandomNumber() {
+  const numbers = Array(9)
+    .fill("")
+    .map((_, index) => index + 1);
+  let currentIndex = numbers.length,
+    randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex > 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [numbers[currentIndex], numbers[randomIndex]] = [
+      numbers[randomIndex],
+      numbers[currentIndex],
+    ];
+  }
+
+  return Number.parseInt(numbers.join(""));
 }
 </script>

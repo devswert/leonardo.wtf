@@ -13,6 +13,7 @@
     <EducationSection></EducationSection>
 
     <!-- No Tech Things -->
+    <NoTechThingsSection></NoTechThingsSection>
   </div>
 </template>
 
