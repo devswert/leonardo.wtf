@@ -8,7 +8,11 @@
     >
       <defs>
         <clipPath :id="imageShapeId">
-          <path :id="blobPathId" :d="pathState" fill="#306564"></path>
+          <path
+            id="blobPathId"
+            d="M472,294.5Q449,339,424,377Q399,415,348.5,406.5Q298,398,261,445.5Q224,493,183.5,464.5Q143,436,114,403Q85,370,90.5,326.5Q96,283,61,242.5Q26,202,50.5,162.5Q75,123,118,109.5Q161,96,192.5,49.5Q224,3,275,10Q326,17,340.5,75.5Q355,134,413,143Q471,152,483,201Q495,250,472,294.5Z"
+            fill="#306564"
+          ></path>
         </clipPath>
       </defs>
       <image
@@ -39,8 +43,8 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
-import * as blobshape from "blobshape";
-import * as dynamics from "dynamics.js";
+// import * as blobshape from "blobshape";
+// import * as dynamics from "dynamics.js";
 
 // Local variables and state
 let initialized = false;
@@ -99,7 +103,7 @@ function setup() {
   blobPathId.value = `blob-path-${getRandomNumber()}`;
   blobShapeConfig.size = props.size;
   blobShapeConfig.seed = getRandomNumber();
-  pathState.value = blobshape(blobShapeConfig).path;
+  // pathState.value = blobshape(blobShapeConfig).path;
   if (props.images.length === 0) {
     return;
   }
@@ -107,7 +111,7 @@ function setup() {
   if (props.images.length === 1) {
     imageContainer1.value = props.images[0];
     imageContainer2.value = props.images[0];
-    setInterval(changeShape, 3000);
+    // setInterval(changeShape, 3000);
     return;
   }
 
@@ -115,7 +119,7 @@ function setup() {
   imageContainer2.value = props.images[1];
 
   setInterval(() => {
-    changeShape();
+    // changeShape();
     flipContainers();
     setTimeout(updateNextImage, 700);
   }, 3000);
@@ -126,20 +130,20 @@ function changeShape() {
   const blobPath = document.getElementById(blobPathId.value);
   blobShapeConfig.size = props.size;
   blobShapeConfig.seed = getRandomNumber();
-  const newShape = blobshape(blobShapeConfig);
-  dynamics.animate(
-    blobPath,
-    { d: newShape.path },
-    {
-      type: dynamics.spring,
-      frequency: 80,
-      friction: 200,
-      duration: 600,
-    },
-  );
-  setTimeout(() => {
-    pathState.value = newShape.path;
-  }, 650);
+  // const newShape = blobshape(blobShapeConfig);
+  // dynamics.animate(
+  //   blobPath,
+  //   { d: newShape.path },
+  //   {
+  //     type: dynamics.spring,
+  //     frequency: 80,
+  //     friction: 200,
+  //     duration: 600,
+  //   },
+  // );
+  // setTimeout(() => {
+  //   pathState.value = newShape.path;
+  // }, 650);
 }
 
 function flipContainers() {
