@@ -60,7 +60,7 @@ import { onBeforeMount } from "vue";
 const images: Array<string> = [];
 
 onBeforeMount(() => {
-  for (let index = 1; index <= 20; index++) {
+  for (let index = 1; index <= 5; index++) {
     images.push(`/images/p${index}.jpg`);
   }
 });
