@@ -29,18 +29,21 @@
       </a>
       <div class="flex flex-row gap-4 mx-auto my-8">
         <a
+          aria-label="Send me an email"
           href="email:leo.david.mm@gmail.com"
           class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
         >
           <EmailIcon :size="20"></EmailIcon>
         </a>
         <a
+          aria-label="Keep in touch on LikedIn"
           href="https://linkedin.com/in/leonardodavid"
           class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
         >
           <LinkedInIcon :size="20"></LinkedInIcon>
         </a>
         <a
+          aria-label="Check my GitHub profile"
           href="https://github.com/devswert"
           class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
         >

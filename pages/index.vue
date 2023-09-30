@@ -7,17 +7,17 @@
 
     <!-- About Me -->
     <div class="bg-brand-green">
-      <AboutMeSection class="container max-w-7xl mx-auto"></AboutMeSection>
+      <AboutMeSection class="container max-w-5xl mx-auto"></AboutMeSection>
     </div>
 
     <!-- Professional Experience -->
     <ProfessionalExperienceSection
-      class="container max-w-7xl mx-auto"
+      class="container max-w-5xl mx-auto"
     ></ProfessionalExperienceSection>
 
     <!-- Education -->
     <div class="bg-brand-green">
-      <EducationSection class="container max-w-7xl mx-auto"></EducationSection>
+      <EducationSection class="container max-w-5xl mx-auto"></EducationSection>
     </div>
 
     <!-- No Tech Things -->
