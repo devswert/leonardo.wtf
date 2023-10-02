@@ -1,5 +1,5 @@
 <template>
-  <div class="text-brand-green pt-24 px-5 relative pb-10 overflow-hidden">
+  <div class="text-brand-green pt-24 px-5 relative">
     <h2 class="font-hornbill text-4xl text-center mb-5">
       • <br />
       No Tech Things
@@ -20,29 +20,6 @@
         Leyendas, a Chilean card game. With my partner, we play Overcooked 2
         <b>a lot</b>. We love that game.
       </p>
-    </div>
-    <div class="flex flex-row gap-10 w-full justify-center mt-40 md:mt-20">
-      <a
-        aria-label="Send me an email"
-        href="email:leo.david.mm@gmail.com"
-        class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
-      >
-        <EmailIcon :size="20"></EmailIcon>
-      </a>
-      <a
-        aria-label="Keep in touch on LikedIn"
-        href="https://linkedin.com/in/leonardodavid"
-        class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
-      >
-        <LinkedInIcon :size="20"></LinkedInIcon>
-      </a>
-      <a
-        aria-label="Check my GitHub profile"
-        href="https://github.com/devswert"
-        class="p-3 rounded-full border-2 border-brand-green transition-all hover:bg-brand-green-light"
-      >
-        <GitHubIcon :size="20"></GitHubIcon>
-      </a>
     </div>
   </div>
 </template>
