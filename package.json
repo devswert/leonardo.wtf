@@ -29,7 +29,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "blobshape": "^1.0.0",
-    "dynamics.js": "^1.1.5"
+    "animejs": "^3.2.1",
+    "blobs": "^2.3.0-beta.2"
   }
 }

@@ -3,7 +3,7 @@
     <div
       class="relative overflow-hidden md:flex md:items-center md:justify-evenly"
     >
-      <h1 class="font-hornbill text-6xl z-10 my-32 relative ml-5 md:text-8xl">
+      <h1 class="font-hornbill text-6xl z-10 my-40 relative ml-5 md:text-8xl">
         <span class="sm:hidden">Hey!</span>
         <span class="hidden sm:inline">Hey there!</span>
         <br />

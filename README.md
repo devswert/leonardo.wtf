@@ -4,8 +4,8 @@ This is a small portafolio written to host a beautiful version of my cv, and in 
 
 - [Nuxt 3](https://nuxt.com/docs/getting-started/introduction): Frontend framework to manage pages and have a router.
 - [TailwindCSS](https://tailwindcss.com/): CSS framework to create beautiful UIs.
-- [blobshape](https://github.com/lokesh-coder/blobshape): Used to generate random SVG shapes used as ClipPath with images.
-- [Dynamics.js](http://dynamicsjs.com/): Used to have smooth animations between shape transitions.
+- [Blobs](https://blobs.dev/): Used to generate random SVG shapes used as ClipPath with images.
+- [Anime.js](https://animejs.com/): Used to have smooth animations between shape transitions.
 
 [Blobs Generator app](https://lokesh-coder.github.io/blobs.app/?e=6&gw=6&se=7817&c=d1d8e0&o=0) was an inspiration to build the `BurbleShape` component.
 
