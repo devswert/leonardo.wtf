@@ -24,6 +24,8 @@
     <NoTechThingsSection
       class="container max-w-7xl mx-auto"
     ></NoTechThingsSection>
+
+    <Footer />
   </div>
 </template>
 
