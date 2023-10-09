@@ -24,7 +24,7 @@
     </p>
     <p
       v-if="props.isActive || props.descriptionAlwaysVisible"
-      class="font-sora pt-6"
+      class="font-sora pt-6 whitespace-pre-line"
     >
       {{ props.description }}
     </p>

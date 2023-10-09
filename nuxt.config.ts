@@ -2,12 +2,26 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/src/assets/main.css"],
+  modules: ["@nuxtjs/i18n"],
   components: ["~/components/icons", "~/components/sections", "~/components"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  i18n: {
+    vueI18n: "./i18n.config.ts",
+    locales: [
+      {
+        code: "en",
+        name: "🇬🇧 English",
+      },
+      {
+        code: "es",
+        name: "🇨🇱 Español",
+      },
+    ],
   },
   app: {
     head: {

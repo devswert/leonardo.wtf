@@ -16,6 +16,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/i18n": "^8.0.0-rc.5",
     "@types/blobshape": "^1.0.0",
     "@typescript-eslint/parser": "^6.7.3",
     "autoprefixer": "^10.4.16",
