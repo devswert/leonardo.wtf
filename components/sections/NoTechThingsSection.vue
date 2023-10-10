@@ -8,6 +8,7 @@
       <BurbleShape
         :images="images"
         :size="500"
+        :random-order="true"
         class="-bottom-20 -left-20 max-w-xl opacity-40 absolute w-full -z-10 md:opacity-100 md:w-2/3 md:relative md:bottom-0 md:left-0"
       ></BurbleShape>
       <p class="font-sora z-10 md:w-1/3 md:text-right">
