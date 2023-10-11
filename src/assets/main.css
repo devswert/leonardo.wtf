@@ -7,6 +7,7 @@
 @font-face {
   font-family: "Hornbill";
   src: url("/fonts/Hornbill-Black.otf");
+  font-display: swap;
 }
 
 body {

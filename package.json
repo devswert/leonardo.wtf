@@ -30,6 +30,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@nuxt/image": "^1.0.0-rc.3",
     "animejs": "^3.2.1",
     "blobs": "^2.3.0-beta.2"
   }

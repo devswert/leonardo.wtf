@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/src/assets/main.css"],
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@nuxt/image"],
   components: ["~/components/icons", "~/components/sections", "~/components"],
   postcss: {
     plugins: {
