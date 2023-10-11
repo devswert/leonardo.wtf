@@ -14,6 +14,7 @@
       <BurbleShape
         class="-top-14 -right-20 z-0 max-w-lg opacity-40 absolute w-full md:w-1/2 md:relative md:max-w-full md:opacity-100 md:right-0 md:top-0"
         :images="images"
+        :random-order="true"
       ></BurbleShape>
     </div>
     <i18n-t
