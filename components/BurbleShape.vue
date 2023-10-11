@@ -104,10 +104,16 @@ onBeforeMount(() => {
   // Prepare better images
   const img = useImage();
   for (let i = 0; i < images.length; i++) {
-    images[i] = img(images[i], {
-      format: "webp",
-      quality: 90,
-    });
+    images[i] = img(
+      images[i],
+      {
+        format: "webp",
+        quality: 90,
+      },
+      {
+        provider: "cloudinary",
+      },
+    );
   }
 });
 

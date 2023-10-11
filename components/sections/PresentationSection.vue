@@ -68,8 +68,10 @@ const images: Array<string> = [];
 const years = computed(() => new Date().getFullYear() - 2013);
 
 onBeforeMount(() => {
+  const baseCloudinaryFolder =
+    "https://res.cloudinary.com/dh9xuxzcy/image/upload/v1697048603/portafolio-images/";
   for (let index = 1; index <= 5; index++) {
-    images.push(`/images/p${index}.jpg`);
+    images.push(`${baseCloudinaryFolder}/p${index}.jpg`);
   }
 });
 </script>

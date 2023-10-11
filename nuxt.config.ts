@@ -10,6 +10,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  image: {
+    cloudinary: {
+      baseURL: "https://res.cloudinary.com/dh9xuxzcy/image/fetch/",
+    },
+  },
   i18n: {
     vueI18n: "./i18n.config.ts",
     defaultLocale: "en",

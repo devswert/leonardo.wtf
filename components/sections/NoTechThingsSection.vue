@@ -24,8 +24,10 @@ import { onBeforeMount } from "vue";
 const images: Array<string> = [];
 
 onBeforeMount(() => {
+  const baseCloudinaryFolder =
+    "https://res.cloudinary.com/dh9xuxzcy/image/upload/v1697048603/portafolio-images/";
   for (let index = 6; index <= 20; index++) {
-    images.push(`/images/p${index}.jpg`);
+    images.push(`${baseCloudinaryFolder}/p${index}.jpg`);
   }
 });
 </script>
