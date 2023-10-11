@@ -6,9 +6,11 @@
     ></PresentationSection>
 
     <!-- About Me -->
-    <div class="bg-brand-green">
-      <AboutMeSection class="container max-w-5xl mx-auto"></AboutMeSection>
-    </div>
+    <WaveContainer :color="'#306564'">
+      <div class="bg-brand-green">
+        <AboutMeSection class="container max-w-5xl mx-auto"></AboutMeSection>
+      </div>
+    </WaveContainer>
 
     <!-- Professional Experience -->
     <ProfessionalExperienceSection
@@ -16,9 +18,13 @@
     ></ProfessionalExperienceSection>
 
     <!-- Education -->
-    <div class="bg-brand-green">
-      <EducationSection class="container max-w-5xl mx-auto"></EducationSection>
-    </div>
+    <WaveContainer :color="'#306564'">
+      <div class="bg-brand-green">
+        <EducationSection
+          class="container max-w-5xl mx-auto"
+        ></EducationSection>
+      </div>
+    </WaveContainer>
 
     <!-- No Tech Things -->
     <NoTechThingsSection

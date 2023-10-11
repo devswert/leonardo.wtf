@@ -1,5 +1,5 @@
 <template>
-  <div class="text-brand-green pt-24 px-5">
+  <div class="text-brand-green px-5">
     <h2 class="font-hornbill text-4xl text-center mb-5">
       • <br />
       {{ $t("experiences.professionalTitle") }}

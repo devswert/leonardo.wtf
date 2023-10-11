@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-brand-green text-brand-light mt-24 py-24 px-5">
+  <div class="bg-brand-green text-brand-light px-5">
     <h2 class="font-hornbill text-4xl text-center mb-5">
       • <br />
       {{ $t("education.title") }}
@@ -7,7 +7,7 @@
     <p class="mb-4">
       {{ $t("education.firstParagraph") }}
     </p>
-    <p class="mb-4">
+    <p>
       {{ $t("education.secondParagraph") }}
     </p>
   </div>

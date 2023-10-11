@@ -1,5 +1,5 @@
 <template>
-  <div class="text-brand-green pt-24 px-5 relative">
+  <div class="text-brand-green px-5 relative">
     <h2 class="font-hornbill text-4xl text-center mb-5">
       • <br />
       {{ $t("noTechThings.title") }}
@@ -9,7 +9,7 @@
         :images="images"
         :size="500"
         :random-order="true"
-        class="-bottom-20 -left-20 max-w-xl opacity-40 absolute w-full -z-10 md:opacity-100 md:w-2/3 md:relative md:bottom-0 md:left-0"
+        class="top-48 -left-20 max-w-xl opacity-40 absolute w-full -z-10 md:opacity-100 md:w-2/3 md:relative md:top-0 md:left-0"
       ></BurbleShape>
       <p class="font-sora z-10 md:w-1/3 md:text-right">
         {{ $t("noTechThings.firstParagraph") }}
