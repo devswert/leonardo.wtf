@@ -2,13 +2,16 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/src/assets/main.css"],
-  modules: ["@nuxtjs/i18n", "@nuxt/image"],
+  modules: ["@nuxtjs/i18n", "@nuxt/image", "nuxt-gtag"],
   components: ["~/components/icons", "~/components/sections", "~/components"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  gtag: {
+    id: "G-FP2563ME8S",
   },
   image: {
     cloudinary: {
