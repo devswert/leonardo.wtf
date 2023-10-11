@@ -38,6 +38,5 @@ onMounted(() => {
 
   upPath.value = GenerateClosedPath(defaultClosedPathOptions);
   downPath.value = GenerateClosedPath(defaultClosedPathOptions);
-  console.log("Here");
 });
 </script>
