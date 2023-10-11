@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, onMounted, onBeforeMount, ref } from "vue";
 import { svgPath as blobsSvgPath } from "blobs/v2";
 import anime from "animejs";
 
@@ -87,7 +87,36 @@ const imageShapeId = computed(() => {
   return `image-shape-${blobPathId.value}`;
 });
 
-// onMounted component event
+// Events
+onBeforeMount(() => {
+  if (initialized) {
+    return;
+  }
+
+  images = props.images;
+  if (props.randomOrder) {
+    for (let i = images.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [images[i], images[j]] = [images[j], images[i]];
+    }
+  }
+
+  // Prepare better images
+  const img = useImage();
+  for (let i = 0; i < images.length; i++) {
+    images[i] = img(
+      images[i],
+      {
+        format: "webp",
+        quality: 90,
+      },
+      {
+        provider: "cloudinary",
+      },
+    );
+  }
+});
+
 onMounted(() => {
   setup();
 });
@@ -100,23 +129,15 @@ function setup() {
 
   blobPathId.value = `blob-path-${getRandomNumber()}`;
   pathState.value = generateSVGPath();
-  if (props.images.length === 0) {
+  if (images.length === 0) {
     return;
   }
 
-  if (props.images.length === 1) {
-    imageContainer1.value = props.images[0];
-    imageContainer2.value = props.images[0];
+  if (images.length === 1) {
+    imageContainer1.value = images[0];
+    imageContainer2.value = images[0];
     setInterval(changeShape, 3000);
     return;
-  }
-
-  images = props.images;
-  if (props.randomOrder) {
-    for (let i = images.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [images[i], images[j]] = [images[j], images[i]];
-    }
   }
 
   imageContainer1.value = images[0];

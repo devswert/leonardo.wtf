@@ -2,12 +2,17 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/src/assets/main.css"],
-  modules: ["@nuxtjs/i18n"],
+  modules: ["@nuxtjs/i18n", "@nuxt/image"],
   components: ["~/components/icons", "~/components/sections", "~/components"],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    },
+  },
+  image: {
+    cloudinary: {
+      baseURL: "https://res.cloudinary.com/dh9xuxzcy/image/fetch/",
     },
   },
   i18n: {
