@@ -155,6 +155,10 @@
       :size="$props.size"
       :color="$props.color"
     />
+    <FastAPIIcon v-if="$props.icon === 'fastapi'" :size="$props.size" />
+    <SupabaseIcon v-if="$props.icon === 'supabase'" :size="$props.size" />
+    <ReactIcon v-if="$props.icon === 'react'" :size="$props.size" />
+    <NextJSIcon v-if="$props.icon === 'nextjs'" :size="$props.size" />
   </div>
 </template>
 

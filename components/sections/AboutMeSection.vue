@@ -23,13 +23,16 @@
       <DartIcon :size="50" />
       <LaravelIcon :size="50" />
       <NestjsIcon :size="50" />
+      <NextJSIcon :size="50" />
       <FlutterIcon :size="50" />
       <CSSIcon :size="50" />
       <TailwindIcon :size="50" />
+      <FastAPIIcon :size="50" />
       <DjangoIcon :size="50" />
       <MongoDBIcon :size="50" />
       <NodeJsIcon :size="50" />
       <VueIcon :size="50" />
+      <ReactIcon :size="50" />
       <AngularIcon :size="50" />
       <RedisIcon :size="50" />
       <PostgreSQLIcon :size="50" />
@@ -40,6 +43,8 @@
       <FigmaIcon :size="50" />
       <KubernetesIcon :size="50" />
       <AWSIcon :size="50" />
+      <FirebaseIcon :size="50" />
+      <SupabaseIcon :size="50" />
     </div>
   </div>
 </template>
