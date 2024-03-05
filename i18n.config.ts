@@ -19,7 +19,7 @@ export default defineI18nConfig(() => ({
       aboutMe: {
         title: "About Me",
         firstParagraph:
-          "I'm a software engineer with 10 years of experience. During this time I've learned and grown in distinct scopes, from understanding what software engineering itself is to the importance of being part of a company where I share their mission/vision.",
+          "I'm a software engineer with 11 years of experience. During this time I've learned and grown in distinct scopes, from understanding what software engineering itself is to the importance of being part of a company where I share their mission/vision.",
         secondParagraph:
           "I've worked building hybrid mobile apps, with frontend, backend, and some things about infrastructure (I love learning new stuff). I'm a person who loves coding, and every day I try to polish my skills to be a better software engineer, taking care of details in implementations that I'm building, from creating good documentation, delivering quality software, measurable, and tested, to the most optimal way to work in a team.",
         someTools: "Some tools that I've used (don't have a particular order):",
@@ -32,7 +32,7 @@ export default defineI18nConfig(() => ({
             company: "HealthAtom",
             tools: ["php", "js", "react", "mysql"],
             position: "Software Engineer",
-            timeFrame: "Jun 2024 - Present",
+            timeFrame: "Jan 2024 - Present",
             description:
               "After some months of thinking and relaxing, I applied to this company where their mission caught my attention: “help others”.  As a software engineer, I don't only work coding in PHP or javascript, also, I suggest better practices to documentate our software, improve the way we collaborate as a team, and participate in meetings to suggest solutions to incoming requirements. Currently, I'm working in a team where we take care of custom integrations and features for an important company's client.",
           },
@@ -223,7 +223,7 @@ export default defineI18nConfig(() => ({
       aboutMe: {
         title: "Sobre Mi",
         firstParagraph:
-          "Soy un ingeniero de software con 10 años de experiencia. Durante este tiempo he aprendido y crecido en distintos ámbitos, desde comprender qué es la ingeniería de software, a entender lo importante que es formar parte en una compañía en la que comparto su misión/visión.",
+          "Soy un ingeniero de software con 11 años de experiencia. Durante este tiempo he aprendido y crecido en distintos ámbitos, desde comprender qué es la ingeniería de software, a entender lo importante que es formar parte en una compañía en la que comparto su misión/visión.",
         secondParagraph:
           "He trabajado construyendo aplicaciones móviles híbridas, con frontend, backend, y algunas cosas de infraestructura (me encanta aprender cosas nuevas). Soy una persona que disfruta de codear, y cada día trato de pulir mis habilidades para ser un mejor ingeniero de software, poniendo atención en los detalles de las implementaciones que estoy construyendo, desde crear buena documentación, entregando software de calidad, medible, y testeado, hasta la manera más óptima de trabajar en equipo.",
         someTools:
